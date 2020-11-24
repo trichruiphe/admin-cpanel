@@ -1,0 +1,101 @@
+<%-include('../frame/head')-%>
+    <div class="container-fluid mt-n10">
+        <div class="row">
+            <% for(var i = 0; i<5; i++) {%>
+            <div class="col-md-3 ut-list-order-web">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <div>
+                            Ngô Thanh Tùng
+                        </div>
+                        <div class="ut-small-fz">Nam Định</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="ut-small-fz">Order ID</div>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">#78935</div>
+                            </div>
+                            <div class="w-100 ut-dis-updo2px"></div>
+                            <div class="col">
+                                <div class="ut-small-fz">Date</div>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">July 22, 2020</div>
+                            </div>
+                            <div class="w-100 ut-dis-updo2px"></div>
+                            <div class="col">
+                                <div class="ut-small-fz">Sđt</div>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">0943 834 526</div>
+                            </div>
+                            <div class="w-100 ut-dis-updo2px"></div>
+                            <div class="col">
+                                <div class="ut-small-fz">Price</div>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">450,000&#x20AB;</div>
+                            </div>
+                        </div>
+                        <a href="website/83845787458" class="btn btn-primary btn-sm ut-link-detail-order" target="_blank">detail</a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">Danh sách khách hàng</div>
+            <div class="card-body">
+                <div class="datatable table-responsive">
+                    <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Tên khách hàng</th>
+                                <th>Giỏ hàng</th>
+                                <th>Địa chỉ</th>
+                                <th>Sdt</th>
+                                <th>Ngày order</th>
+                                <th>Tổng phí</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Tên khách hàng</th>
+                                <th>Giỏ hàng</th>
+                                <th>Địa chỉ</th>
+                                <th>Sdt</th>
+                                <th>Ngày order</th>
+                                <th>Tổng phí</th>
+                                <th>Status</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td><a href="website/83845787458" class="href">Ngô Thanh Tùng</a></td>
+                                <td>Áo thun, quần bò</td>
+                                <td>Nam định</td>
+                                <td>0943834526</td>
+                                <td>2020-06-12</td>
+                                <td>99,000,000đ</td>
+                                <td><div class="badge badge-warning badge-pill">Pending</div></td>
+                            </tr>
+                            <tr>
+                                <td><a href="website/83845787458" class="href">Ngô Thanh Tùng</a></td>
+                                <td>Áo thun, quần bò</td>
+                                <td>Nam định</td>
+                                <td>0943834526</td>
+                                <td>2020-06-12</td>
+                                <td>99,000,000đ</td>
+                                <td><div class="badge badge-warning badge-pill">Pending</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<%-include('../frame/footer')-%>

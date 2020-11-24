@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="ut-header"></div>
+	<div class="ut-main-content">
+		<div class="ut-block-cnt">
+			<div class="ut-top-filter">
+				<input type="text" name=""/>
+			</div>
+			<div class="ut-bot-need">
+				<div class="ut-sidenav-menu">
+					<div class="ut-part-filter ut-color-filter">
+						<h2>Colors</h2>
+						<ul class="ut-listColor-button">
+							<li><button type="button" name="" id="whiteBut"></li>
+							<li><button type="button" name="" id="grayBut"></li>
+							<li><button type="button" name="" id="orangeBut"></li>
+							<li><button type="button" name="" id="yellowBut"></li>
+							<li><button type="button" name="" id="greenBut"></li>
+							<li><button type="button" name="" id="blueBut"></li>
+							<li><button type="button" name="" id="blackBut"></li>
+						</ul>
+					</div>
+					<div class="ut-part-filter ut-color-filter">
+						<h2>Size</h2>
+						<ul class="ut-listSize-button">
+							<li><button type="button" name="" id="sSBut" class="active">Small</button></li>
+							<li><button type="button" name="" id="mSBut">Medium</button></li>
+							<li><button type="button" name="" id="lSBut">Large</button></li>
+							<li><button type="button" name="" id="xlSBut">XL</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="ut-side-content">
+					<div class="ut-list-product">
+						<% for(var i = 1; i <= 12; i++) {%>
+						<a href="<%= i %>" class="ut-list-proLink">
+							<img src="images/products/<%= i %>.jpg" alt="">
+						</a>
+						<% } %>
+					</div>
+					<div class="ut-list-page">
+						1-2-3-4
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%- include('footer');%>
+</body>
+</html>

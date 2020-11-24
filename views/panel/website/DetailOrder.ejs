@@ -1,0 +1,124 @@
+<%-include('../frame/head')-%>
+    <div class="container-fluid mt-n10">
+        <div class="card mb-4 card-header-actions">
+            <div class="card-header">Thông tin đơn hàng<div>
+                <button class="btn btn-primary rounded-pill mr-2" type="button">In bill</button>
+                <button class="btn btn-primary rounded-pill" type="button">Submit -></button>
+            </div></div>
+            <div class="card-body ut-bill-overall">
+                <h1>Invoice</h1>
+                <div class="ut-line-top-bill row">
+                    <div class="col-md-3">Date <span class="ut-font-w500">07/08/2020</span></div>
+                    <div class="col-md-3">Order ID #<span class="ut-font-w500">758374</span></div>
+                </div>
+                <div class="ut-bill-where row">
+                    <div class="col">
+                        <div class="ut-bill-ft ut-bill-from">Bill from:</div>
+                        <div>
+                            <h4>Ngô Thanh Tùng</h4>
+                        </div>
+                        <div>Xóm 8, Xuân Tiến, Xuân Trường, Nam Định</div>
+                        <div>094 3834 526</div>
+                        <div>trichruiphe@gmail.com</div>
+                    </div>
+                    <div class="col">
+                        <div class="ut-bill-ft ut-bill-to">Bill to:</div>
+                        <div>
+                            <h4>Ngô Thanh Tùng</h4>
+                        </div>
+                        <div>Xóm 8, Xuân Tiến, Xuân Trường, Nam Định</div>
+                        <div>094 3834 526</div>
+                        <div>trichruiphe@gmail.com</div>
+                    </div>
+                </div>
+                <table class="table ut-list-order-table table-hover ut-w250" width="100%" cellspacing="0">
+                    <thead>
+                        <tr role="row">
+                            <th style="width: 20px"></th>
+                            <th class="sorting_asc" style="width: 144px;">Tên khách hàng</th>
+                            <th class="sorting_asc" style="width: 144px;">Tên khách hàng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i = 1; i < 6; i++) {%>
+                        <tr>
+                            <td><%- i %></td>
+                            <td>2 Áo thun adidas, 1 Quần tây, 3 Áo trắng, 4 Quần ống rộng</td>
+                            <td>tung</td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <div class="row ut-balance-bill">
+                    <div class="col"></div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div>Subtotal</div>
+                            </div>
+                            <div class="col">
+                                <div>1,500,000&#x20AB;</div>
+                            </div>
+                            <div class="w-100 ut-dis-updo"></div>
+                            <div class="col">
+                                <div>Balanced</div>
+                            </div>
+                            <div class="col">
+                                <div>1,500,000&#x20AB;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <% for(let i = 1; i < 10; i++) {%>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="../../images/products/<%= i %>.jpg" alt="" class="card-img-top">
+                    <div class="card-body ut-pad-b10">
+                        <div class="row">
+                            <div class="col">
+                                <div class="ut-small-fz">Product Name</div>
+                                <div class="ut-font-w500">Áo trắng</div>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">Orders</div>
+                                <div class="ut-font-w500">20</div>
+                            </div>
+                            <div class="w-100 ut-dis-updo"></div>
+                            <div class="col">
+                                <div class="ut-small-fz">Size</div>
+                                <div class="ut-font-w500">XL</div>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">Price</div>
+                                <div class="ut-font-w500">150.000&#x20AB;</div>
+                            </div>
+                            <div class="w-100 ut-dis-updo"></div>
+                            <div class="col">
+                                <div class="ut-small-fz">Color</div>
+                                <span class="ut-circle-color ut-circle-red"></span>
+                            </div>
+                            <div class="col ut-text-right">
+                                <div class="ut-small-fz">Code</div>
+                                <div class="ut-font-w500">#843587</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="/panel/depot/1" class="btn btn-primary btn-sm ut-link-rnt" target="_blank">Xem chi tiết sản phẩm</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" id="customCheck<%= i %>" type="checkbox">
+                            <label class="custom-control-label" for="customCheck<%= i %>">Chốt đơn</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        
+    </div>
+<%- include('../frame/footer')-%>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="ut-nav-header">
+		<ul>
+			<li><a href="" title="">tung</a></li>
+		</ul>
+	</nav>
+	<div class="ut-header">
+	</div>
+	<div class="ut-main-content">
+		<div class="ut-block-cnt">
+			<div class="ut-bot-need">
+				<div class="ut-side-content">
+					<div class="ut-side-top ut-clearfix">
+						<div class="ut-img-sideShow ">
+							<img src="/images/products/<%-point%>.jpg" class="ut-img-show">
+							<div class="ut-list-img">
+								<ul>
+									<% for(var i = 1;i< 6; i++) {%>
+									<li><img src="/images/products/<%- Math.floor(Math.random() * 12) + 1 %>.jpg" class="ut-child-img-l"></li>
+									<% }%>
+								</ul>
+							</div>
+						</div>
+						<div class="ut-options-ord">
+							<h2 class="ut-title-product">Áo thun trắng Havism</h2>
+							<div class="ut-op-prices">
+								<div class="ut-prs-bfr-sell-off">
+									₫31.800 - ₫79.800
+								</div>
+								<div class="ut-current-price">
+									₫15.900 - ₫39.900
+								</div>
+							</div>
+							<div class="ut-opt-field ut-option-size">
+								<label for="" class="ut-label-options">Size</label>
+								<div class="ut-btn-op-indiv">
+									<button class="ut-btn-size" type="button">S</button>
+									<button class="ut-btn-size" type="button">M</button>
+									<button class="ut-btn-size" type="button">L</button>
+									<button class="ut-btn-size" type="button">XL</button>
+								</div>
+							</div>
+							<div class="ut-opt-field ut-option-colors">
+								<label for="" class="ut-label-options">Color</label>
+								
+							</div>
+							<div class="ut-opt-field ut-option-amount">
+								<label for="" class="ut-label-options">Số lượng</label>
+								<div class="ut-btn-op-indiv">
+									<button type="">-</button>
+									<input class="ut-op-input-amount" type="text" name="" value="1">
+									<button type="">+</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ut-des-tabs">
+						<ul>
+							<li><a href="#reviews" title="">Reviews</a></li>
+							<li><a href="#description" title="">Description</a></li>
+						</ul>
+					</div>
+					<div class="ut-list-page">
+						1-2-3-4
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%- include('footer');%>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<%-include('../frame/head')-%>
+    <div class="container-fluid mt-n10">
+        <div class="card mb-4 card-header-actions">
+            <div class="card-header">Danh sách sản phẩm
+                <div>
+                    <form class="form-inline mr-auto d-none d-lg-block">
+                        <input class="form-control form-control-solid mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Hiện có 1423 sp</p>
+                <div class="row ut-link-info">
+                    <% for(let i = 0; i <5; i++) { %>
+                    <div class="col-md-3">
+                        <a class="card mb-4" href="depot/<%= i %>" target="_blank">
+                            <img src="../suit/ao.webp" alt="" class="card-img-top">
+                            <div class="card-body ut-padding-fix">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="ut-small-fz">Product Name</div>
+                                        <div class="ut-font-w500">Áo trắng</div>
+                                    </div>
+                                    <div class="col ut-text-right">
+                                        <div class="ut-small-fz">Exist</div>
+                                        <div class="ut-font-w500">20</div>
+                                    </div>
+                                    <div class="w-100 ut-dis-updo"></div>
+                                    <div class="col">
+                                        <div class="ut-small-fz">Size</div>
+                                        <div class="ut-font-w500">S,M,XL</div>
+                                    </div>
+                                    <div class="col ut-text-right">
+                                        <div class="ut-small-fz">Sold</div>
+                                        <div class="ut-font-w500">108</div>
+                                    </div>
+                                    <div class="w-100 ut-dis-updo"></div>
+                                    <div class="col">
+                                        <div class="ut-small-fz">Colors</div>
+                                        <span class="ut-circle-color ut-circle-black"></span><span class="ut-circle-color ut-circle-red"></span>
+                                    </div>
+                                    <div class="col ut-text-right">
+                                        <div class="ut-small-fz">Price</div>
+                                        <div class="ut-font-w500">150.000đ</div>
+                                    </div>
+                                    <div class="w-100 ut-dis-updo"></div>
+                                    <div class="col">
+                                        <div class="ut-small-fz">Code</div>
+                                        <div class="ut-font-w500">#843587</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="card-footer">tung</div>
+        </div>
+    </div>
+<%-include('../frame/footer')-%>
